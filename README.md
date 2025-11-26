@@ -2,6 +2,12 @@
 
 A robotics project for recording chess move demonstrations using SO-101 robot arms and train a policy to reproduce any chess move.
 
+*We are currently recording data to begin training models by the end of November*
+
+[![huggingface](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-dataset-blue)](https://huggingface.co/tms-gvd/datasets)
+
+![Setup image](assets/setup.jpg)
+
 ## Installation
 
 *Tested on MacBook Air M1*
