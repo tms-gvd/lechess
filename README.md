@@ -72,7 +72,7 @@ Visualization is provided with `rerun`.
 
 `record.py` is the main script for recording robot teleoperation demonstrations of chess moves. It enables you to:
 
-- **Load PGN files**: Parse chess games from PGN (Portable Game Notation) files
+- **Load PGN files**: Parse chess games from PGN (Portable Game Notation) files. You can find some PGN files in `./chess_games/`
 - **Display chess positions**: Visualize the current board state with move arrows indicating the move to be executed
 - **Record robot demonstrations**: Capture teleoperated robot movements for each chess move
 - **Create LeRobot datasets**: Save recordings in the LeRobot dataset format for training
