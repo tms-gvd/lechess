@@ -116,3 +116,8 @@ python record.py \
 6. **Periodic checks**: Every 5 moves, prompts to adjust lighting and chessboard position
 7. **Dataset creation**: Saves each recorded episode with metadata including FEN and move notation
 8. **Upload**: Optionally pushes the complete dataset to HuggingFace hub with chess-specific tags
+
+## Acknowledgment
+
+- The LeRobot team [huggingface/lerobot](https://github.com/huggingface/lerobot) for LeRobot, teleoperation, recording, `LeRobotDataset` and so much else
+- [Chojins](https://github.com/Chojins) for its work and ideas on LeRobot playing chess: 3D printed magnetic chess set, pedestal, gripper, etc
