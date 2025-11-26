@@ -14,7 +14,7 @@ A robotics project for recording chess move demonstrations using SO-101 robot ar
 
 Clone this repo with `lerobot` submodule:
 ```
-git clone --recursive <repo>
+git clone --recursive https://github.com/tms-gvd/lechess.git
 ```
 It uses a fork of `lerobot` that is up-to-date with the original one, with slight modifications.
 
