@@ -5,6 +5,7 @@ A robotics project for recording chess move demonstrations using SO-101 robot ar
 *We are currently recording data to begin training models by the end of November*
 
 [![huggingface](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-dataset-blue)](https://huggingface.co/tms-gvd/datasets)
+[![huggingface](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-visualize-blue)](https://huggingface.co/spaces/lerobot/visualize_dataset)
 
 ![Setup image](assets/setup.jpg)
 
