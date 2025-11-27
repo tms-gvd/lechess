@@ -233,9 +233,8 @@ def main():
             recorded_episodes += 1
 
             # Every 5 moves, remind user to adjust lighting and chessboard position
-            if recorded_episodes % 5 == 0:
-                log_say("Please modify the lighting and chessboard position", PLAY_SOUNDS)
-                time.sleep(2)
+            if recorded_episodes % 5 == 0 and recorded_episodes < len(pgn_game):
+                log_say("Please modify the lighting and chessboard position", PLAY_SOUNDS, blocking=True)
                 display_observation(robot, robot_observation_processor)
 
             episode_task = None  # Reset task for next episode
@@ -266,6 +265,8 @@ def main():
         )
         print(f"Pushed dataset to hub with chess information")
 
+    # Flush stdin to clear any leftover characters from keyboard listener
+    termios.tcflush(sys.stdin.fileno(), termios.TCIFLUSH)
 
 if __name__ == "__main__":
     main()

@@ -2,7 +2,6 @@
 
 import time
 from lerobot.utils.utils import log_say
-from lerobot.utils.robot_utils import busy_wait
 from lerobot.utils.visualization_utils import log_rerun_data
 from lechess.record.config import FPS
 
@@ -27,7 +26,7 @@ def display_observation(robot, robot_observation_processor):
         obs_processed = robot_observation_processor(obs)
         log_rerun_data(obs_processed)
         dt_time = time.perf_counter() - start_time
-        busy_wait(1 / FPS - dt_time)
+        time.sleep(max(1 / FPS - dt_time, 1 / FPS))
 
     listener.stop()
 
